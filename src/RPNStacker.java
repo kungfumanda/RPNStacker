@@ -29,7 +29,7 @@ class Main {
             System.out.println("Some error occurred.");
             e.printStackTrace();
           }
-          stack.forEach(System.out::println);
+          //stack.forEach(System.out::println);
           System.out.print(stack.pop()); /*Resultado final estará na pilha*/
 }
 
