@@ -14,19 +14,15 @@
  *     http://www.cin.ufpe.br/~hemr/
  * ******************************************************************/
 
-package stacker.rpn.lexer;
+package RPNStacker.Postfix.src.postfix.lexer;
 
 /**
  * @author Henrique Rebelo
  */
-public enum TokenType {
+public class LexError extends RuntimeException{
+	private static final long serialVersionUID = 1L;
 
-	// Literals.
-	NUM,
-
-	// Single-character tokens for operations.
-	MINUS, PLUS, SLASH, STAR,
-	
-	EOF
-
+	public LexError(String msg) {
+		super(msg);
+	}
 }
